@@ -1,4 +1,4 @@
-import Aula01.*;
+import ExerciciosLista1.*;
 
 public class App {
     public static void main(String[] args) throws Exception {   

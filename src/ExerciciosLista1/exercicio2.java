@@ -1,4 +1,4 @@
-package Aula01;
+package ExerciciosLista1;
 //Classe referente a um aluno de academia
 public class exercicio2 {
     private String nome;

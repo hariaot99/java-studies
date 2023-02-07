@@ -1,4 +1,4 @@
-package Aula01;
+package ExerciciosLista1;
 //classe referente a uma lista de numeros e trabalhando em cima dela
 public class exercicio4 {
     private int vetor[];
