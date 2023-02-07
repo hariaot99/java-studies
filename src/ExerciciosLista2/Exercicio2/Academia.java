@@ -24,8 +24,9 @@ public class Academia {
         float imc = aluno.imc();
         String maioridade = aluno.maioridade();
 
-        System.out.println("\t\nNome: "+aluno.getNome()+"  Idade: "+aluno.getIdade()
-        +" Altura: "+aluno.getAltura()+" Peso: "+aluno.getPeso()+"\n Maioridade? "+maioridade+"\n IMC: "+imc);
+        System.out.println("\t\nNome: " + aluno.getNome() + "  Idade: " + aluno.getIdade()
+                + " Altura: " + aluno.getAltura() + " Peso: " + aluno.getPeso() + "\n Maioridade? " + maioridade
+                + "\n IMC: " + imc);
     }
-    
+
 }

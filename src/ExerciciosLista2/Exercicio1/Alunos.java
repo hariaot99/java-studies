@@ -8,6 +8,18 @@ public class Alunos {
     private float t1;
     private float t2;
 
+    public Alunos() {
+    }
+
+    public Alunos(String rA, String nome, float n1, float n2, float t1, float t2) {
+        RA = rA;
+        this.nome = nome;
+        this.n1 = n1;
+        this.n2 = n2;
+        this.t1 = t1;
+        this.t2 = t2;
+    }
+
     public String getRA() {
         return RA;
     }

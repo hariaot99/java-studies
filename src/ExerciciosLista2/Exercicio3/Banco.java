@@ -13,11 +13,12 @@ public class Banco {
         cliente.setCodConta(entrada.nextLine());
         System.out.println("Primeiro deposito:");
         cliente.depositar(entrada.nextFloat());
-        
-        System.out.println("Nome: "+cliente.getNome()+" Codigo do Cliente: "+cliente.getCodConta()+" Saldo: "+cliente.getSaldo());
+
+        System.out.println("Nome: " + cliente.getNome() + " Codigo do Cliente: " + cliente.getCodConta() + " Saldo: "
+                + cliente.getSaldo());
 
         System.out.println("Sacar:");
         cliente.sacar(entrada.nextFloat());
-        
+
     }
 }

@@ -5,6 +5,15 @@ public class Cliente {
     private String codConta;
     private float saldo;
 
+    public Cliente() {
+    }
+
+    public Cliente(String nome, String codConta, float saldo) {
+        this.nome = nome;
+        this.codConta = codConta;
+        this.saldo = saldo;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -30,8 +39,8 @@ public class Cliente {
             saldo -= saque;
         }
     }
-    
-    public void depositar(float deposito){
+
+    public void depositar(float deposito) {
         saldo += deposito;
     }
 }

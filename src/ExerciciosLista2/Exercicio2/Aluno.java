@@ -6,6 +6,16 @@ public class Aluno {
     private float altura;
     private float peso;
 
+    public Aluno() {
+    }
+
+    public Aluno(String nome, int idade, float altura, float peso) {
+        this.nome = nome;
+        this.idade = idade;
+        this.altura = altura;
+        this.peso = peso;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -37,15 +47,15 @@ public class Aluno {
     public void setPeso(float peso) {
         this.peso = peso;
     }
-    
-    public String maioridade(){
-        if(idade>=18){
+
+    public String maioridade() {
+        if (idade >= 18) {
             return "Eh maior de idade";
         }
         return "Nao eh maior de didade";
     }
 
-    public float imc(){
-        return (peso/(float) Math.pow(altura, 2));
+    public float imc() {
+        return (peso / (float) Math.pow(altura, 2));
     }
 }
