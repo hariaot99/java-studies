@@ -1,4 +1,5 @@
 package Aula01;
+//classe referente a um objeto "conta de banco" aprendendo a trabalhar com atributos e metodos
 public class exercicio3 {
     private String numeroConta;
     private String nome;
