@@ -1,4 +1,5 @@
-package ExerciciosLista1;
+package ExerciciosLista1.exercicio4;
+
 // basicamente um controller para a classe exercicio04
 public class exercicio04Main {
     public static void main(String[] args) throws Exception {
