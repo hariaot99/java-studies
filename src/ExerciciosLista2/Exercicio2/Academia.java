@@ -7,20 +7,20 @@ public class Academia {
         System.out.println(" \n\n\t\tMain Exercicio 2 Lista 2\n\n");
         System.out.println("Insira os dados:");
         Aluno aluno = new Aluno();
-        Scanner entrada = new Scanner(System.in);
-        System.out.print("Nome: ");
-        String nome = entrada.nextLine();
-        aluno.setNome(nome);
-        System.out.print("Altura: ");
-        float altura = entrada.nextFloat();
-        aluno.setAltura(altura);
-        System.out.print("Peso: ");
-        float peso = entrada.nextFloat();
-        aluno.setPeso(peso);
-        System.out.print("Idade: ");
-        int idade = entrada.nextInt();
-        aluno.setIdade(idade);
-
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Nome: ");
+            String nome = entrada.nextLine();
+            aluno.setNome(nome);
+            System.out.print("Altura: ");
+            float altura = entrada.nextFloat();
+            aluno.setAltura(altura);
+            System.out.print("Peso: ");
+            float peso = entrada.nextFloat();
+            aluno.setPeso(peso);
+            System.out.print("Idade: ");
+            int idade = entrada.nextInt();
+            aluno.setIdade(idade);
+        }
         float imc = aluno.imc();
         String maioridade = aluno.maioridade();
 

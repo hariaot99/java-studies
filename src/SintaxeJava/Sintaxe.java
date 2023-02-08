@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Sintaxe {
     public static void main(String[] args) {
         /* Introducao a tipos de dados */
-        int numAlunos;
-        float nota;
-        double saldo;
-        boolean flag;
+        // int numAlunos;
+        // float nota;
+        // double saldo;
+        // boolean flag;
         /* Atribuindo valor aos dados */
-        numAlunos = 30;
-        nota = 5.6f; // para diferenciar float de double e necessario colocar f ao final do valor
-        saldo = 5.6;
-        flag = true;
+        //numAlunos = 30;
+        //nota = 5.6f; // para diferenciar float de double e necessario colocar f ao final do valor
+        //saldo = 5.6;
+        //flag = true;
         float peso = 90.0f;
         float altura = 1.78f;
         float imc = peso / (altura * altura);
@@ -22,7 +22,7 @@ public class Sintaxe {
 
         String nome;// String eh uma classe de java
         nome = "Danilo";
-        Float f = 4.3f;
+        //Float f = 4.3f;
         /* Sout para exibir impressoes no terminal */
         System.out.println(imc);
         System.out.println("IMC: " + imc);
@@ -145,22 +145,22 @@ public class Sintaxe {
         }
 
         System.out.println("\n\nENTRADA de DADOS");
-        Scanner entrada = new Scanner(System.in);
-        float nota1, nota2;
-        System.out.print("Nota1: ");
-        nota1 = entrada.nextFloat();
-        System.out.print("Nota2: ");
-        nota2 = entrada.nextFloat();
-        float media = (nota1 + nota2) / 2.0f;
-        System.out.println("Nota1: " + nota1);
-        System.out.println("Nota2: " + nota2);
-        System.out.println("Media: " + media);
-        entrada.nextLine();
-        System.out.print("Nome: ");
-        nome = entrada.nextLine();
-        System.out.print("Idade: ");
-        idade = entrada.nextInt();
-
+        try (Scanner entrada = new Scanner(System.in)) {
+            float nota1, nota2;
+            System.out.print("Nota1: ");
+            nota1 = entrada.nextFloat();
+            System.out.print("Nota2: ");
+            nota2 = entrada.nextFloat();
+            float media = (nota1 + nota2) / 2.0f;
+            System.out.println("Nota1: " + nota1);
+            System.out.println("Nota2: " + nota2);
+            System.out.println("Media: " + media);
+            entrada.nextLine();
+            System.out.print("Nome: ");
+            nome = entrada.nextLine();
+            System.out.print("Idade: ");
+            idade = entrada.nextInt();
+        }
         System.out.println("Nome: " + nome + " Idade: " + idade);
 
     }

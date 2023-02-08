@@ -1,6 +1,5 @@
 package ExerciciosLista2.Exercicio5;
 
-import javax.naming.LimitExceededException;
 
 public class Conta {
     public String titular;
@@ -23,7 +22,7 @@ public class Conta {
     }
 
     public void setTitular(String titular) {
-        titular = titular;
+        this.titular = titular;
     }
 
     public double getSaldo() {

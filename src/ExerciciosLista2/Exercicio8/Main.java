@@ -7,13 +7,13 @@ public class Main {
         f1.setCod("1");
         f1.setNome("Ricardo");
         f1.setFuncao("Tecnico em Informatica");
-        f1.setSalario(3200);
+        
 
         Funcionario f2 = new Funcionario();
         f2.setCod("2");
         f2.setNome("Diego");
         f2.setFuncao("Tecnico em Administracao");
-        f2.setSalario(3200);
+        
 
         Departamento d1 = new Departamento(50);
         d1.setCod("1");
